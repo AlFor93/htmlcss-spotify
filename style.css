@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.root {
+  background-image: linear-gradient(to right bottom, rgb(57, 77, 96), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+}
+.top_part {
+  height: 90vh;
+}
+.top_part > .col-sm-2 {
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  color: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_top {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navbar_bottom {
+  width: 100%;
+  height: 15%;
+  text-align: center;
+}
+.top_part > .col-sm-10 {
+  height: 100%;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.various_genres {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.various_genres span{
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.central_preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: aliceblue;
+  margin: 10px 10px;
+}
+.now_playing_bar {
+  height: 10vh;
+  min-width: 620px;
+  background-color: #282828;
+  color: #fff;
+}
