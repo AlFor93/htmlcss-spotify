@@ -4,39 +4,70 @@
   margin: 0;
 }
 .root {
+  min-height: 100vh;
+  position: relative;
   background-image: linear-gradient(to right bottom, rgb(57, 77, 96), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
 }
 .top_part {
-  height: 90vh;
+  min-height: 100vh;
+  display: flex;
 }
-.top_part > .col-sm-2 {
-  height: 100%;
+.navbar_all {
+  height: 100vh;
   background-color: rgba(0,0,0,.8);
   color: #b3b3b3;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  padding-bottom: 60px;
 }
 .navbar_top {
   width: 100%;
-  height: 80%;
+  height: 68%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+.navbar_top img {
+  width: 24px;
+  height: 24px;
+}
+#logo img {
+  width: 130px;
+  height: 40px;
+}
+.navbar_top h3 {
+  text-transform: uppercase;
+  font-size: 12px;
+}
 .navbar_bottom {
   width: 100%;
   height: 15%;
-  text-align: center;
 }
-.top_part > .col-sm-10 {
-  height: 100%;
-  color: #fff;
+.navbar_bottom img {
+  width: 20px;
+  height: 20px;
 }
-.container {
+.session_info {
+  border-top: 1px solid rgb(64, 64, 64);
+  width: 100%
+}
+.session_info img {
+  width: 28px;
+  height: 30px;
+}
+.root_main-view {
+  max-width: 1480px;
+  margin: auto;
+  padding-left: 16%;
+}
+.root_main-view > .col-sm-12 {
+  height: 100vh;
   width: 100%;
-  height: 100%;
+  color: #fff;
 }
 .various_genres {
   padding: 30px 0;
@@ -47,10 +78,18 @@
   padding: 0 20px;
   text-transform: uppercase;
 }
+.container {
+  width: 100%;
+  padding-right: -20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .central_preview {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .square {
   width: 150px;
@@ -59,8 +98,12 @@
   margin: 10px 10px;
 }
 .now_playing_bar {
-  height: 10vh;
+  height: 7vh;
   min-width: 620px;
+  width: 100%;
   background-color: #282828;
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
 }
