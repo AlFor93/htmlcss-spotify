@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title></title>
@@ -12,102 +13,178 @@
       <div class="top_part">
         <div class="col-sm-2 navbar_all">
           <div class="navbar_top pt-4">
-            <div id="logo" class="pb-3">
+            <div id="logo" class="pb-3 cursor">
               <img src="img_spotify/logo.svg" alt="">
             </div>
-            <div class="">
+            <div class="hoverable cursor">
               <img src="img_spotify/search.svg" alt="">
               <span>Cerca</span>
             </div>
-            <div class="">
+            <div class="hoverable cursor">
               <img src="img_spotify/home.svg" alt="">
               <span>Home</span>
             </div>
-            <div class="">
+            <div class="hoverable cursor">
               <img src="img_spotify/libreria.svg" alt="">
               <span>La tua libreria</span>
             </div>
             <div class="">
               <h3>ascoltati di recente</h3>
             </div>
-            <div class="">
-              <span>Lavorare con la musica</span>
+            <div class="cursor">
+              <span class="">Lavorare con la musica</span>
               <h3>Playlist</h3>
             </div>
-            <div class="">
-              <span>Gemme Sparse</span>
+            <div class="cursor">
+              <span class="hoverable">Gemme Sparse</span>
               <h3>Playlist</h3>
             </div>
-            <div class="">
-              <span>un Thè e un libro</span>
+            <div class="cursor">
+              <span class="hoverable">un Thè e un libro</span>
               <h3>Playlist</h3>
             </div>
-            <div class="">
-              <span>Daily Mix 1</span>
+            <div class="cursor">
+              <span class="hoverable">Daily Mix 1</span>
               <h3>Daily Mix</h3>
             </div>
-            <div class="">
-              <span>Daily Mix 2</span>
+            <div class="cursor">
+              <span class="hoverable">Daily Mix 2</span>
               <h3>Daily Mix</h3>
             </div>
           </div>
           <div class="navbar_bottom pt-3">
-            <div class="pb-3">
+            <div class="pb-3 hoverable cursor">
               <img src="img_spotify/download.svg" alt="">
               <span>Installa l'app</span>
             </div>
-            <div class="session_info pl-1 pt-3">
+            <div class="session_info pl-1 pt-3 hoverable cursor">
               <img src="img_spotify/profile.svg" alt="">
               <span>Username</span>
             </div>
           </div>
         </div>
-        <div class="root_main-view">
-          <div class="col-sm-12">
-              <div class="various_genres">
-                <span>In Evidenza</span>
-                <span>Podcast</span>
-                <span>Classifiche</span>
-                <span>Generi e Mood</span>
-                <span>Nuove Uscite</span>
-                <span>Scopri</span>
-              </div>
-              <div class="container">
-                <h2 class="ml-2">Creato per Alberto.Fornasiero</h2>
+        <!-- <div class="root_main-view"> -->
+          <div class="col-sm-10">
+            <div class="hamburger_menu">
+              <i class="fas fa-bars fa-3x"></i>
+            </div>
+            <div class="various_genres cursor">
+                <span class="hoverable">In Evidenza</span>
+                <span class="hoverable">Podcast</span>
+                <span class="hoverable">Classifiche</span>
+                <span class="hoverable">Generi e Mood</span>
+                <span class="hoverable">Nuove Uscite</span>
+                <span class="hoverable">Scopri</span>
+            </div>
+            <div class="container-fluid">
+              <h2 class="ml-2">Creato per Alberto.Fornasiero</h2>
                 <div class="central_preview">
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
-                  <div class="square"></div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square">
+                      <div class="shadow">
+                        <div class="daily-mix-decoration">
+                          <img src="https://daily-mix.scdn.co/covers/waves/wave_1.png" class="waves" alt="">
+                          <img src="https://daily-mix.scdn.co/covers/text/1_IT.png" class="bottom-text" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mo_info">Daily Mix 1</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square">
+                      <div class="shadow">
+                        <div class="daily-mix-decoration">
+                          <img src="https://daily-mix.scdn.co/covers/waves/wave_2.png" class="waves" alt="">
+                          <img src="https://daily-mix.scdn.co/covers/text/2_IT.png" class="bottom-text" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mo_info">Daily Mix 2</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square">
+                      <div class="shadow">
+                        <div class="daily-mix-decoration">
+                          <img src="https://daily-mix.scdn.co/covers/waves/wave_4.png" class="waves" alt="">
+                          <img src="https://daily-mix.scdn.co/covers/text/3_IT.png" class="bottom-text" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mo_info">Daily Mix 3</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <div class="square"></div>
+                    <div class="mo_info">B-Side</div>
+                  </div>
                 </div>
-              </div>
+            </div>
           </div>
-        </div>
-        </div>
+        <!-- </div> -->
+      </div>
 
       <div class="now_playing_bar">
-        dkuhfsdiuknfsd
+        <div class="now_playing_right">
+          <div class="now_playing">
+            <div class="cover_art_image">
+              <img src="https://i.scdn.co/image/f2447adfba34df445f257514f3716ced9a4c7a59">
+            </div>
+            <div class="track_info mr-3">
+              <span class="cursor">Cocaine</span>
+              <div class="hoverable cursor">Eric Clapton</div>
+            </div>
+            <div class="">
+              <i class="far fa-heart hoverable"></i>
+              <i class="fas fa-minus-circle hoverable"></i>
+            </div>
+          </div>
+        </div>
+        <div class="player_controls">
+          <div class="text-center">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="playback-bar">
+            <div class="playback-bar__progress-time">0:09</div>
+            <div class="progression_bar">
+              <div id="avanzamento"></div>
+            </div>
+            <div class="playback-bar__progress-time">3:36</div>
+          </div>
+        </div>
+        <div class="volume_controls">
+          leftkfujhdbsfgkjlfbsfgkjbndfjkhbsdf
+        </div>
       </div>
 
     </div>
